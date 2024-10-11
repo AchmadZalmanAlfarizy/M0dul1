@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header .navbar {
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin-left: 15px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('90s.jpeg');
+  background-size: cover;
+  color: #b8b1b1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Produk Section */
+.produk h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.product-box {
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-box:hover { /*produk terangkat*/
+  transform: translateY(-10px);
+}
+
+.product-box img {
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+} 
+
+footer .social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
