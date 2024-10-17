@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #8598eb 0%, #5685e3 100%); /* Gradasi warna latar belakang */
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background-color: #fff; /* Warna latar belakang kalkulator */
+    width: 300px; /* Lebar kalkulator */
+}
+
+.display {
+    background-color: #222; /* Warna latar belakang display */
+    color: #fff; /* Warna teks */
+    font-size: 2.5em; /* Ukuran font untuk display */
+    padding: 20px;
+    text-align: right;
+    border-bottom: 3px solid #2f60c2; /* Garis batas di bawah display */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Membuat 4 kolom untuk tombol */
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Efek transisi */
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #f9f9f9; /* Warna latar belakang tombol */
+}
+
+.button:hover {
+    background-color: #e0e0e0; /* Efek hover untuk tombol */
+    transform: translateY(-2px); /* Efek angkat saat hover */
+}
+
+.clear {
+    background-color: #f44336; /* Warna tombol AC */
+    color: white; /* Warna teks tombol AC */
+}
+
+.clear:hover {
+    background-color: #d32f2f; /* Efek hover untuk tombol AC */
+}
+
+.operator {
+    background-color: #4c6faf; /* Warna tombol operator */
+    color: white; /* Warna teks tombol operator */
+}
+
+.operator:hover {
+    background-color: #0d2f45; /* Efek hover untuk tombol operator */
+}
+
+.zero {
+    grid-column: span 2; /* Menggabungkan dua kolom untuk tombol 0 */
+}
+
+@media (max-width: 600px) {
+    .button {
+        font-size: 1.2em; /* Mengubah ukuran font pada perangkat kecil */
+        padding: 15px; /* Mengurangi padding pada perangkat kecil */
+    }
+
+    .display {
+        font-size: 2em; /* Mengubah ukuran font display pada perangkat kecil */
+    }
+}

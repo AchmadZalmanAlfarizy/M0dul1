@@ -1,0 +1,110 @@
+/* Latar belakang dengan gambar */
+body.background {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('sunset.jpg'); /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Alternatif: latar belakang gradasi warna */
+body.gradient {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%); /* Gradasi dari biru muda ke biru tua */
+}
+
+.todo-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang semi-transparan untuk kotak to-do */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333; /* Warna teks judul */
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Warna tombol hijau */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Warna tombol saat hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+li .edit-mode {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+li .edit-mode input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+li button {
+    background-color: #f44336; /* Warna tombol merah untuk hapus */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #d32f2f; /* Warna tombol saat hover */
+}
+
+li .edit-button {
+    background-color: #008CBA; /* Warna tombol biru untuk edit */
+}
+
+li .edit-button:hover {
+    background-color: #007bb5; /* Warna tombol saat hover */
+}
